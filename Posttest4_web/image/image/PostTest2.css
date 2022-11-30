@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+;root{
+    --primary-color: rgba(86, 24, 24, 0.767);
+}
+
+
+#icon{
+    width: 40px;
+    cursor: pointer;
+}
+
+.background-color{
+    background: var(--primary-color) ;
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh; ;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 300px;
+    cursor: pointer;
+    margin: 50px 0;
+    color: rgb(51, 24, 1);
+    font-size: 33px;
+    font-family: sans-serif;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    color: rgb(197, 193, 193);
+}
+
+nav ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-right: 50px;    
+}
+
+.col-1 h2{
+    font-size: 70px;
+    color: rgba(44, 5, 5, 0.873);
+}
+
+.col-1 p{
+    font-size: 24px;
+    font-weight: 100;
+    margin: 30px 0;
+    color: #dbdbdbe2;
+}
+
+button{
+    width: 150px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: white;
+    background: linear-gradient(to right,#621c03e1, #792202e2);
+    border-radius: 6px;
+    cursor:pointer;
+}
+
+button:hover{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    color : black;
+}
+
+.col-1::after{
+    content: "";
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(#792202e2, #873505ea);
+    position: absolute;
+    right: -40px;
+    top: 10px;
+}
+/*792202e2
+873505ea*/
+.col-2{
+    flex-basis: 40%;
+    position: relative;
+    margin-right: 50px;
+    
+}
+
+.col-2 .image{
+    width: 70%;
+}
+
+.col-3{
+    flex-basis: 40%;
+    height: 100%;
+    Right: 425px;
+    top: 275px;
+    position: absolute;
+    margin-right: 50px;
+}
+
+.col-3 .image{
+    width: 20%;
+}
+
+.medsos{
+    height: 20px;
+    cursor:pointer;
+    margin-left: 30px;
+}
+
+footer {
+    position: fixed;
+    height: 50px;
+    bottom: 0px;
+    width: 100%;
+    line-height: 50px;
+    color: #000000;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #792202e2;
+}
